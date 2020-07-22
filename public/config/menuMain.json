@@ -1,0 +1,66 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "Introduccion",
+    "title": "Introducción",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/intro.html"
+  },  
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text-o",
+    "slug": "aplicacion",
+    "title": "1. Aplicación por primera vez de la norma de información financiera para microempresas",
+    "breadcrumb": ["Inicio","tema 1"],
+    "path": "pages/1-tema.html"
+   },
+
+  {
+    "id": 3,
+    "icon": "fa fa-file-text-o",
+    "slug": "procedimientos",
+    "title": "2. Procedimientos para preparar los estados financieros en la fecha de transición",
+    "breadcrumb": ["Inicio","Tema 2"],
+    "path": "pages/2-tema.html"
+  
+  },
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text-o",
+    "slug": "revelacion",
+    "title": "3. Revelación de la transición a la norma de información financiera para las microempresas",
+    "breadcrumb": ["Inicio","tema 3"],
+    "path": "pages/3-tema.html"
+  },
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text-o",
+    "slug": "validar",
+    "title": "4. Validar el registro de la información contable según la norma de información financiera para microempresas",
+    "breadcrumb": ["Inicio","tema 4"],
+    "path": "pages/4-tema.html"
+  },
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text-o",
+    "slug": "emitir",
+    "title": "5. Emitir los reportes y los estados financieros según la norma de información financiera",
+    "breadcrumb": ["Inicio","tema 5"],
+    "path": "pages/5-tema.html"
+  },
+  
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
+  }
+  
+]

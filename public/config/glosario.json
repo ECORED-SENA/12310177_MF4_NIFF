@@ -1,0 +1,55 @@
+[
+  {
+    "letter": "A",
+    "terms": [
+      {
+        "title": "Activo Corriente",
+        "desciption": "Es el efectivo equivalente al efectivo al menos que este restringido y no pueda ser intercambiado, ni utilizado."
+      },
+      {
+        "title": "Acumulación o devengo",
+        "desciption": "Describe efectos de las transacciones y otros sucesos sobre los recursos económicos."
+      }
+    ]
+  }, 
+  {
+    "letter": "C",
+    "terms": [
+      {
+        "title": "Costo Atribuido",
+        "desciption": "Es un importe que se puede utilizar como una exención voluntariamente elegida por parte de la entidad en adopción por primera vez en partidas pertenecientes a Propiedad, Planta y Equipo; Propiedades de Inversión (Si se escoge la aplicación del modelo del costo), y activos intangibles (si cumplen con los criterios de reconocimiento). El costo atribuido no se puede usar en la medición de otros activos o pasivos."
+      },
+      {
+        "title": "Costo Histórico",
+        "desciption": "Los activos se registran por el importe de efectivo y otras partidas pagadas o por el valor razonable de la contrapartida entregada a cambio en el momento de la adquisición."
+      },
+      {
+        "title": "Costos Corriente",
+        "desciption": "Los activos se registran por el importe de efectivo y otras partidas equivalentes que debería pagarse si se adquiriese en la actualidad el mismo activo o su equivalente."
+      }
+    ]
+  },
+  {
+    "letter": "V",
+    "terms": [
+      {
+        "title": "Valor Realizable",
+        "desciption": "También llamado de liquidación. Los activos se llevan contablemente por el importe de efectivo y otras partidas equivalentes al efectivo que podrían obtenerse, en el momento presente, por la venta no forzada de los mismos."
+      },
+      {
+        "title": "Valor Presente",
+        "desciption": "Los activos se llevan contablemente al valor presente, descontando las entradas netas de efectivo que se espera genere la partida en el curso normal de operación."
+      }
+    ]
+  },  
+  {
+    "letter": "X",
+    "terms": [
+      {
+        "title": "XBRL",
+        "desciption": "Lenguaje Estándar de Transferencia de Información."
+      }
+    ]
+  }
+
+]
