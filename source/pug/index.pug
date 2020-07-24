@@ -9,12 +9,12 @@ html(lang="es")
     body#page-home.theme-dark.page-header-textura
 
         header#CursoPresentacion.curso-presentacion.page-header
+            .page-textura
+                .container
 
-            .container
-
-                include includes/page-home_topbar.pug
-
-                include includes/page-home_header.pug                
+                    include includes/page-home_topbar.pug
+                    //include includes/page-home_header.pug                
+                    +pageHeader("Tema", "assets/images/header/header_media.svg", "home")
 
         section#ResultadosAprendizaje.curso-resultados.section.bg-base-light
 

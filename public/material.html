@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Interpretación de los resultados de la información financiera NIIF para microempresas</title>
+        <meta meta name="description" content="Implementar las normas de información financiera (NIIF) según criterios para Microempresas.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de Aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Índice Temático</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Fundamentos NIIF para microempresas</h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Interpretación de los resultados de la información financiera NIIF para microempresas</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">Implementar las normas de información financiera (NIIF) según criterios para Microempresas.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <ul class="bg-color-dark">
+                            <li> <span>Verificar el registro de las operaciones comerciales de las microempresas, teniendo en cuenta la norma de información financiera NIIF para </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-play"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#pages/intro.html/">Introducción</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#pages/intro.html/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/aplicacion/">Aplicación por primera vez de la norma de información financiera para microempresas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/aplicacion/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/procedimientos/">Procedimientos para preparar los estados financieros en la fecha de transición</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/procedimientos/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/revelacion/">Revelación de la transición a la norma de información financiera para las microempresas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/revelacion/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/validar/">Validar el registro de la información contable según la norma de información financiera para microempresas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/validar/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">5</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/emitir/">Emitir los reportes y los estados financieros según la norma de información financiera</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/emitir/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-question"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="main.html#page/actividad-1/">Actividad didáctica</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="main.html#page/actividad-1/">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="introduccion">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Introducción </h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row my-5">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body mt-0">
+                                    <p>Con la implementación de las normas de información financiera según NIIF para microempresas es necesario esforzarse en asumir el reto del cambio de pasar de lo tradicional a implementar las normas emitidas, para este caso, según NIIF para microempresas.</p><br>
+                                    <p>Aunque es necesario generar una técnica de trabajo, el microempresario se dará cuenta que no es un reto difícil de asumir, sino una oportunidad de formalizar el proceso contable de manera que evidencie el verdadero estado financiero de la organización.</p><br>
+                                    <p>Esto es verificable, además de todos los componentes que posee, por los procedimientos establecidos para la clasificación y registro de la información contable, la cual debe cumplir unos criterios, debe ser sometida a una evaluación que permite reconocerla y medirla para luego ser incluida en una partida que se ajuste a las características del hecho económico.</p>
+                                    <div class="embed-responsive embed-responsive-16by9 mt-5"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/aQlGd5reipc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-1">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>1. Aplicación por primera vez de la norma de información financiera para microempresas</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Según el decreto 2706 de 2012 el reconocimiento es el proceso de incorporar en los estados financieros una partida que cumple con la definición de activo, pasivo, ingreso o gasto y que cumpla los siguientes criterios:</p><br>
+                            <p>a) Es probable que cualquier beneficio económico futuro asociado con la partida entre o salga de la microempresa.</p><br>
+                            <p>b) La partida tiene un costo o valor que puede ser medido con fiabilidad.</p><br>
+                            <p class="mt-5">La falta de reconocimiento en los estados financieros de una partida que satisface esos criterios, no se rectifica mediante la revelación de las políticas contables seguidas, ni tampoco a través de notas u otro material explicativo.</p><img class="img-a mt-5 img-fluid" src="assets/images/pages/ilustraciones/img1.png">
+                            <h3 class="mt-5">Adopción por Primera Vez</h3>
+                            <p class="mt-5"> Una microempresa que adopte por primera vez la Norma de Información Financiera para Microempresas aplicará lo contenido en el decreto 2706 de 2012 en la preparación de sus primeros estados financieros, los cuales deben cumplir con los requisitos establecidos en la mencionada norma.</p><br>
+                            <p>Los primeros estados financieros de una microempresa, conforme a esta norma, son los estados financieros anuales en los cuales la microempresa hace una declaración inicial, explícita y sin reservas del cumplimiento de la mencionada norma. Los estados financieros preparados de acuerdo con esta norma, son los primeros estados financieros de una microempresa si ella por ejemplo:</p>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/1y.png"></div>
+                                <div class="col-8">
+                                    <p>No presentó estados financieros en los periodos anteriores. </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/2y.png"></div>
+                                <div class="col-8">
+                                    <p>Presentó sus estados financieros más recientes según el marco contable anterior, que no son coherentes con todos los aspectos de esta norma.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/3y.png"></div>
+                                <div class="col-8">
+                                    <p>Presentó sus estados financieros más recientes de conformidad con NIIF o NIIF para Pymes. </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-6">
+                                    <p>Los estados financieros o conjunto completo de estados financieros para la microempresa son: </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/1b.png"></div>
+                                <div class="col-8">
+                                    <p>Estado de Situación Financiera.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/2b.png"></div>
+                                <div class="col-8">
+                                    <p>Estado de Resultados.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/3b.png"></div>
+                                <div class="col-8">
+                                    <p>Notas a los estados financieros como lo especifica el párrafo 3.8 de esta norma. </p>
+                                </div>
+                            </div>
+                            <p class="mt-5">Una microempresa revelará información comparativa, respecto del periodo comparable anterior, para todos los montos presentados en los estados financieros del periodo corriente, así como información financiera específica. Adicionalmente, incluirá información comparativa para la información de tipo descriptivo y narrativo, cuando esto sea relevante para la comprensión de los estados financieros del periodo corriente.</p><br>
+                            <p>Una microempresa puede presentar información comparativa con respecto a más de un periodo anterior comparable. La fecha de transición a la norma de información financiera para microempresas de una microempresa es la fecha en la que prepara su estado de situación financiera de apertura a esta norma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>2. Procedimientos para preparar los estados financieros en la fecha de transición</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Una microempresa deberá, en su estado de situación financiera de apertura en la fecha de transición a la norma de información financiera para las microempresas:</p>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                <div class="col-8">
+                                    <p>Reconocer todos los activos y pasivos de acuerdo con lo señalado en esta norma. </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                <div class="col-8">
+                                    <p>No reconocer partidas como activos y pasivos si esta norma no lo permite. </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                <div class="col-8">
+                                    <p>Reclasificar las partidas que reconoció, según su marco contable anterior, como activo, pasivo o componente de patrimonio, pero que son de un tipo diferente de acuerdo con esta norma. </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"> <img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                <div class="col-8">
+                                    <p>Aplicar esta norma al medir todos los activos y pasivos reconocidos.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center border-radius-color-orange mt-5 py-5 px-5">
+                                <div class="col-12 col-md-6">
+                                    <p>Las políticas contables que una microempresa utilice en su estado de situación financiera, de apertura conforme a esta norma pueden diferir de las que aplicaba en la misma fecha utilizando su sistema contable anterior. Los ajustes resultantes surgen de transacciones, otros sucesos y condiciones anteriores a la fecha de transición a esta norma. Por lo tanto, una microempresa reconocerá estos ajustes, en la fecha de transición a esta norma, directamente en la cuenta de resultados acumulados.</p>
+                                </div>
+                                <div class="col-12 col-md-6"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img2.png"></div>
+                            </div>
+                            <h2 class="mt-5 text-center">Revaluación como Costo Atribuido</h2>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img3.png"></div>
+                                <div class="col-12 col-md-9">
+                                    <p class="bg-color-note border-radius px-3 py-3">Una microempresa que aplica por primera vez esta norma, podrá utilizar como costo de las propiedades, planta y equipo en el estado de situación financiera de apertura, cualquiera de los siguientes criterios:</p>
+                                    <div class="row justify-content-center align-items-center mt-5">
+                                        <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                        <div class="col-8">
+                                            <p>Un avalúo técnico efectuado en la fecha de transición.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center align-items-center mt-5">
+                                        <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                        <div class="col-8">
+                                            <p>El saldo que se trae de los registros contables anteriores, siempre y cuando cumplan con los criterios de reconocimiento de esta norma.</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3">En lo sucesivo, este valor será la base para aplicar las disposiciones contenidas en la presente norma. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>3. Revelación de la transición a la norma de información financiera para las microempresas</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Una microempresa, explicará en una nota a los estados financieros, como ha efectuado la transición desde el marco contable anterior a esta norma.</p>
+                            <h2 class="text-center mt-5">Conciliaciones</h2>
+                            <p class="mt-5">Para cumplir con lo establecido en el párrafo anterior, los primeros estados financieros preparados conforme a esta norma son:</p>
+                            <div class="row justify-content-center align-items-center mt-5">
+                                <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img4.png"></div>
+                                <div class="col-12 col-md-9">
+                                    <div class="row justify-content-center align-items-center mt-5">
+                                        <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                        <div class="col-8">
+                                            <p>Una descripción de la naturaleza de cada cambio en la política contable.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/select.png"></div>
+                                        <div class="col-8">
+                                            <p>Conciliación de su patrimonio determinado de acuerdo con su marco contable anterior y con el patrimonio determinado de acuerdo de esta norma según las siguientes fechas:</p><br>
+                                            <p>i) La fecha de transición de esta norma.</p><br>
+                                            <p>ii) El final del último periodo presentado en los estados financieros anuales más recientes de la microempresa determinado de acuerdo con su marco contable anterior.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-5">Una conciliación del resultado de sus operaciones, determinado de acuerdo con su marco contable anterior, para el último periodo incluido en los estados financieros anuales más recientes de la microempresa, con el resultado determinado de acuerdo con esta norma para ese mismo periodo.</p>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-8 border-radius-color-orange mt-5 py-5 px-5">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-auto"><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/serch.png"></div>
+                                        <div class="col-8">
+                                            <p>Si una microempresa no presentó estados financieros en periodos anteriores, revelará este hecho en sus primeros estados financieros preparados conforme a esta norma. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>4. Validar el registro de la información contable según la norma de información financiera para microempresas</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>La validación del registro de la información contable está relacionada con los procedimientos de reconocimiento, medición, registros, clasificación de las transacciones económicas en sus partidas correspondientes cumpliendo con el criterio de las características cualitativas de la información financiera y su explicación o justificación en las notas a los estados financieros.</p><br>
+                            <p>Todo esto ligado al criterio de la buena fe pública que da el Contador Público acerca de la información financiera presentada, a los procesos y procedimientos establecidos en la organización sobre el sistema de control interno y proceso contable; así como el cumplimiento en lo expuesto en la Ley 1314 de 2009 y sus decretos reglamentarios que son explícitos en la veracidad de esta información. </p>
+                            <h2 class="mt-5 text-center">Comparación Normas NIIF antes y luego de su implementación</h2>
+                            <h3 class="mt-3 text-center">Gráfico: Antes y después de la aplicación de NIIF en Colombia </h3><img class="img-a img-fluid" src="assets/images/pages/ilustraciones/img5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-5">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>5. Emitir los reportes y los estados financieros según la norma de información financiera</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Emitir reportes y/o estados financieros constituye una representación estructurada de la situación financiera y rendimiento financiero de una entidad. El objetivo de los estados financieros es suministrar información acerca de la situación financiera, del rendimiento financiero y de los flujos de efectivo de una entidad, que sea útil a una amplia variedad de usuarios a la hora de tomar sus decisiones económicas. Los estados financieros también muestran los resultados de la gestión realizada por los administradores con los recursos que les han sido confiados. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p><strong class="mr-2">Activo Corriente:</strong>es el efectivo equivalente al efectivo al menos que este restringido y no pueda ser intercambiado, ni utilizado.</p>
+                        <p><strong class="mr-2">Acumulación o devengo:</strong>describe efectos de las transacciones y otros sucesos sobre los recursos económicos.</p>
+                        <p> <strong class="mr-2">Costo Atribuido:</strong>es un importe que se puede utilizar como una exención voluntariamente elegida por parte de la entidad en adopción por primera vez en partidas pertenecientes a Propiedad, Planta y Equipo; Propiedades de Inversión (Si se escoge la aplicación del modelo del costo), y activos intangibles (si cumplen con los criterios de reconocimiento). El costo atribuido no se puede usar en la medición de otros activos o pasivos.</p>
+                        <p> <strong class="mr-2">Costo Histórico:</strong>los activos se registran por el importe de efectivo y otras partidas pagadas o por el valor razonable de la contrapartida entregada a cambio en el momento de la adquisición.</p>
+                        <p><strong class="mr-2">Costos Corriente:</strong>los activos se registran por el importe de efectivo y otras partidas equivalentes que debería pagarse si se adquiriese en la actualidad el mismo activo o su equivalente.</p>
+                        <p><strong class="mr-2">Valor Realizable:</strong>también llamado de liquidación. Los activos se llevan contablemente por el importe de efectivo y otras partidas equivalentes al efectivo que podrían obtenerse, en el momento presente, por la venta no forzada de los mismos.</p>
+                        <p> <strong class="mr-2">Valor Presente:</strong>los activos se llevan contablemente al valor presente, descontando las entradas netas de efectivo que se espera genere la partida en el curso normal de operación.</p>
+                        <p> <strong class="mr-2">XBRL:</strong>Lenguaje Estándar de Transferencia de Información. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Autor, (año del documento o material), Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material ( Video, capítulo de libro, articulo, otro) </th>
+                                    <th class="text-center">Enlace del Recurso o Archivo del documento o material </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Guía general de aplicación por primera vez del marco técnico normativo de información financiera para microempresas</strong></td>
+                                    <td>Documento</td>
+                                    <td> <a href="http://www.comunidadcontable.com/BancoMedios/Documentos%20PDF/guia%20implementaci%C3%B3n%20por%20primera%20vez%20microempresas%202.pdf" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Glosario NIIF</strong></td>
+                                    <td>Documento</td>
+                                    <td> <a href="http://www.comunidadcontable.com/BancoConocimiento/NIIF/glosario-niif.asp" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Descargar</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>(Godoy, R. (2018). Adopción por primera vez a las niif-esfa : Plenas, pymes y microempresas. Retrieved from <a class="ml-2" href="https://ebookcentral-proquest-com.bdigital.sena.edu.co" target="_blank">https://ebookcentral-proquest-com.bdigital.sena.edu.co</a></p>
+                        <hr>
+                        <p>(MINCIT, 2012). Decreto 2706 de 2012. Consultado en <a class="ml-2" href="https://niif.com.co/decreto-2706-2012/marco-tecnico-nif-grupo-3" target="_blank">https://niif.com.co/decreto-2706-2012/marco-tecnico-nif-grupo-3</a></p>
+                        <hr>
+                        <p>Ramírez, (2017). NIIF para Microempresas. Normas de Información Financiera para Microempresas con ejercicios de aplicación. Universidad Libre. Bogotá y Cali. Grupo de Investigación, Gestión y Apoyo a Mipymes. Página web Universidad Libre de Colombia <a class="ml-2" href="http://www.unilibre.edu.co/bogota/pdfs/2017/NIF-MICROEMPRESAS.pdf" target="_blank">http://www.unilibre.edu.co/bogota/pdfs/2017/NIF-MICROEMPRESAS.pdf</a></p>
+                        <hr>
+                        <p>Superintendencia de Sociedades. Guía general de aplicación por primera vez del marco técnico normativo de aplicación para microempresas. <a class="ml-2" href="http://www.comunidadcontable.com/BancoMedios/Documentos%20PDF/guia%20implementaci%C3%B3n%20por%20primera%20vez%20microempresas%202.pdf" target="_blank">http://www.comunidadcontable.com/BancoMedios/Documentos%20PDF/guia%20implementaci%C3%B3n%20por%20primera%20vez%20microempresas%202.pdf</a></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Lider del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <p class="footer-texto mb-2"><strong>Norma Constanza Morales Cruz</strong><br /><span class="text-small">Experta temática<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Contratista Centro de Comercio y Servicios - Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Ebert Arcila Jaramillo</strong><br /><span class="text-small">E-pedagogo instruccional<br /></span><span class="text-small text-uppercase">Centro Atención Sector Agropecuario Regional Quindío.</span></p>
+                        <p class="footer-texto mb-2"><strong>Leidy Carolina Arias Aguirre</strong><br /> <span class="text-small">Evaluadora instruccional<br /> </span><span class="text-small text-uppercase">Centro de diseño y metrología.</span></p>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Carlos Julian Ramirez Benitez</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco </strong><br /><span class="text-small">Diseño Web & Producción Audiovisual<br /></span></p>
+                        <p class="footer-texto"><strong>Edward Leonardo Pico Cabra</strong><br />
+                            <strong>Luis Gabriel Urueta Alvarez </strong><br /><span class="text-small">Desarrollo Front-End<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <h4 class="footer-subtitulo-2 mt-5">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"><strong>Kely Alejandra Quiros Duarte </strong><br /> <span class="text-small">Administrador repositorio de contenidos y gestores de repositorio.<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de comercio y servicios </span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="d-flex flex-column justify-content-center"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>

@@ -1,28 +1,47 @@
-mixin pageHeader(tituloTema, srcImagen)
-    .page-header.theme-dark.mb-5
+mixin pageHeader(tituloTema, srcImagen, pagina)
 
-        .container
+    .curso-portada
 
-            .row.align-items-center
+        .row.align-items-center
 
-                .col-12.col-lg-6
+            .col-12.col-lg-6
 
-                    h3#curso-titulo-componente.curso-subtitulo Fundamentos NIIF para microempresas
-                    h1#curso-titulo-tema.curso-titulo= tituloTema
+                h3#curso-titulo-componente.curso-subtitulo Fundamentos NIIF para microempresas
+                h1#curso-titulo-tema.curso-titulo Interpretación de los resultados de la información financiera NIIF para microempresas
 
-                    .brand-line-primary
+                .brand-line-primary
+
+                if pagina == 'main'
 
                     .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #contabilidad
-                        span.badge.badge-pill.badge-light.mr-2 #finanzas
+                        span.badge.badge-pill.badge-light.mr-2 #Empresa
+                        span.badge.badge-pill.badge-light.mr-2 #Contabilidad
 
                     .barra-dots.mt-5
-                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')                        
-  
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
 
-                .col-12.col-lg-6
-                    .d-none.d-lg-block
-                        img(src= srcImagen style="max-width:90%")
+                else 
+                    p.curso-descripcion Implementar las normas de información financiera (NIIF) según criterios para Microempresas.
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-danger(href="main.html")
+                        span Iniciar Curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
+
 
 mixin navTemaItem(numero, titulo, ruta)
     li.list-group-item.nav-tema-item
@@ -64,10 +83,20 @@ mixin creditosFooter(ruta)
 
             .row
                 .col-12.col-md-5
-                    h3.footer-subtitulo Contenido Instruccional
+                    h3.footer-subtitulo.mb-4 ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES 
 
                     p.footer-texto.mb-2
-                        | #[strong Gloria Matilde Lee Mejia	 ]<br/>   
+                        | #[strong Ingry Dayanna Bonilla Monzon	 ]<br/>   
+                        span.text-small Lider del equipo
+
+            .row.mt-5
+                .col-12.col-md-5
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Contenido Instruccional
+
+                    p.footer-texto.mb-2
+                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>   
                         span.text-small Responsable del equipo
 
                     p.footer-texto
@@ -86,53 +115,43 @@ mixin creditosFooter(ruta)
                         span.text-small Regional Santander    
 
                     p.footer-texto.mb-2
-                        | #[strong Elizabeth Mena Rengifo]<br/>   
-                        span.text-small E-Pedagoga instruccional<br/>
-                        | #[strong Rachman Bustillo Martínez]<br/>
-                        span.text-small Evaluador de contenido<br/>
-                        | #[strong Erika Alejandra Beltrán Cuesta]<br/>                                              
-                        span.text-small Evaluadora de calidad instruccional<br/>
+                        | #[strong Norma Constanza Morales Cruz]<br/>
+                        span.text-small Experta temática<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario
-                        br
-                        span.text-small Regional Risaralda
+                        span.text-small.text-uppercase Contratista Centro de Comercio y Servicios - Regional Tolima
 
                     p.footer-texto.mb-2
-                        | #[strong Alejandro Esteban Castillo Ruiz]<br/>   
-                        span.text-small Desarrollador de contenido<br/>
-                        | #[strong Maritza Paz Calderón]<br/>
-                        span.text-small Diseñadora instruccional<br/>
-
-                    p.footer-texto
-                        span.text-small.text-uppercase Centro de Diseño y Metrología
-                        br
-                        span.text-small Regional Distrito Capital
-
-
-
-
-
-
-                        
+                        | #[strong Ebert Arcila Jaramillo]<br/>
+                        span.text-small E-pedagogo instruccional<br/>
+                        span.text-small.text-uppercase Centro Atención Sector Agropecuario Regional Quindío.
+                    p.footer-texto.mb-2
+                        | #[strong Leidy Carolina Arias Aguirre]<br/>   
+                        span.text-small Evaluadora instruccional<br/>                    
+                        span.text-small.text-uppercase Centro de diseño y metrología.
+                       
                 .col-12.col-md-5
-                    h3.footer-subtitulo Diseño y desarrollo de recursos educativos digitales
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Diseño y desarrollo de recursos educativos digitales
                     
                     p.footer-texto
                         | #[strong Francisco José Lizcano Reyes ]<br/>   
                         span.text-small Responsable del equipo<br/>
 
                     p.footer-texto
-                        | #[strong Luis Gabriel Urueta]<br/>   
-                        | #[strong Nelson Iván Vera Briceño]<br/>  
-                        | #[strong Eulises Orduz Amezquita]<br/>
-                        | #[strong Ernesto Navarro Jaimes]<br/>                                              
+                        | #[strong Leyson Fabian Castaño Perez]<br/>   
+                        span.text-small Integración de recursos y pruebas<br/>
+
+                    p.footer-texto                           
+                        | #[strong Carlos Julian Ramirez Benitez]<br/>  
+                        | #[strong Yazmin Rocio Figueroa Pacheco ]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
                     p.footer-texto
                         | #[strong Edward Leonardo Pico Cabra]<br/>
-                        | #[strong Jhon Jairo Urueta Alvarez]<br/>     
-                        | #[strong Leyson Fabian Castaño Perez]<br/>    
+                        | #[strong Luis Gabriel Urueta Alvarez ]<br/>
+
                         span.text-small Desarrollo Front-End<br/>
 
                     p.footer-texto
@@ -140,7 +159,9 @@ mixin creditosFooter(ruta)
                         br
                         span.text-small Regional Santander                   
 
-                    h3.footer-subtitulo.mt-5 Gestores de repositorio
+                    h4.footer-subtitulo-2.mt-5
+                        .fa.fa-caret-right.mr-2
+                        | Gestores de repositorio
                     
                     p.footer-texto
                         | #[strong Kely Alejandra Quiros Duarte ]<br/>   
@@ -153,7 +174,7 @@ mixin creditosFooter(ruta)
 
                 .col-12.col-md-2  
                     .d-flex.flex-column.justify-content-center
-                        img(src= ruta)
+                        img(src= ruta, style="max-width:100px")
 
     section#cc
         .container
