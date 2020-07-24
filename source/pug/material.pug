@@ -34,13 +34,17 @@ html(lang="es")
                         .card.wow.flipInX(data-wow-delay=".4s")
                             .card-body
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
-                                    +navTemaItem('play', 'Introducción', 'main.html#pages/intro.html/')
-                                    +navTemaItem('1', 'Aplicación por primera vez de la norma de información financiera para microempresas', 'main.html#page/aplicacion/')
-                                    +navTemaItem('2', 'Procedimientos para preparar los estados financieros en la fecha de transición', 'main.html#page/procedimientos/')
-                                    +navTemaItem('3', 'Revelación de la transición a la norma de información financiera para las microempresas', 'main.html#page/revelacion/')
-                                    +navTemaItem('4', 'Validar el registro de la información contable según la norma de información financiera para microempresas', 'main.html#page/validar/')
-                                    +navTemaItem('5', 'Emitir los reportes y los estados financieros según la norma de información financiera', 'main.html#page/emitir/')                    
-                                    +navTemaItem('question', 'Actividad didáctica', 'main.html#page/actividad-1/')
+                                    +navTemaItem('play', 'Introducción', '#introduccion')
+                                    +navTemaItem('1', 'Aplicación por primera vez de la norma de información financiera para microempresas', '#tema-1')
+                                    +navTemaItem('2', 'Procedimientos para preparar los estados financieros en la fecha de transición', '#tema-2')
+                                    +navTemaItem('3', 'Revelación de la transición a la norma de información financiera para las microempresas', '#tema-3')
+                                    +navTemaItem('4', 'Validar el registro de la información contable según la norma de información financiera para microempresas', '#tema-4')
+                                    +navTemaItem('5', 'Emitir los reportes y los estados financieros según la norma de información financiera', '#tema-5')
+                                    +navTemaItem('question', 'Actividad didáctica', '#evaluacion')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
+
 
         section#mainContent         
             #introduccion
@@ -52,9 +56,11 @@ html(lang="es")
             #tema-3
                 include pages/3-tema.pug
             #tema-4
-                include pages/4-tema.pug 
+                include pages/4-tema.pug
             #tema-5
-                include pages/5-tema.pug                                
+                include pages/5-tema.pug
+            #evaluacion
+                include pages/actividad-1.pug
             #glosario
                 include pages/glosario.pug
             #anexos

@@ -17,6 +17,7 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
                         span.badge.badge-pill.badge-light.mr-2 #Empresa
                         span.badge.badge-pill.badge-light.mr-2 #Contabilidad
 
+
                     .barra-dots.mt-5
                         img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
 
@@ -24,7 +25,7 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
                     p.curso-descripcion Implementar las normas de información financiera (NIIF) según criterios para Microempresas.
         
                 if pagina == 'home'
-                    a.curso-btn-iniciar.btn.btn-danger(href="main.html")
+                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
                         span Iniciar Curso
 
 
@@ -61,6 +62,21 @@ mixin navTemaItem(numero, titulo, ruta)
                     .avatar.avatar-sm
                         span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
                             i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
             else
                 .col-auto
                     .avatar.avatar-sm
@@ -124,10 +140,15 @@ mixin creditosFooter(ruta)
                     p.footer-texto.mb-2
                         | #[strong Ebert Arcila Jaramillo]<br/>
                         span.text-small E-pedagogo instruccional<br/>
+
+                    p.footer-texto
                         span.text-small.text-uppercase Centro Atención Sector Agropecuario Regional Quindío.
+
                     p.footer-texto.mb-2
-                        | #[strong Leidy Carolina Arias Aguirre]<br/>   
-                        span.text-small Evaluadora instruccional<br/>                    
+                        | #[strong Leidy Carolina Arias Aguirre]<br/>
+                        span.text-small Evaluadora instruccional<br/>
+
+                    p.footer-texto
                         span.text-small.text-uppercase Centro de diseño y metrología.
                        
                 .col-12.col-md-5
@@ -145,6 +166,7 @@ mixin creditosFooter(ruta)
 
                     p.footer-texto                           
                         | #[strong Carlos Julian Ramirez Benitez]<br/>  
+                        | #[strong Nelson Iván Vera Briceño]<br/>                          
                         | #[strong Yazmin Rocio Figueroa Pacheco ]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
