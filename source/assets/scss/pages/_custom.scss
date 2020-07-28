@@ -12,7 +12,8 @@
 }
 
 .text-org{
-    color: orange;    
+    color: orange; 
+    font-weight: bold;   
 }
 
 .custom-item-img {
@@ -105,3 +106,23 @@
 .row-color-1{
     background-color:#707070;
 }
+.sub-line {
+    h2,h3 {
+        overflow: hidden;
+        font-weight: 700;
+    }
+
+    h2:after,h3:after {
+        content:"";
+        display: inline-block;
+        height: 0.5em;
+        vertical-align: bottom;
+        width: 100%;
+        margin-right: -100%;
+        margin-left: 10px;
+        border-top: 1px solid $orange;
+    }
+}
+ .max-width{
+     max-width: 70%;
+ }
